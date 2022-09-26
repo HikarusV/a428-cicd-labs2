@@ -8,7 +8,7 @@ pipeline {
     stages {
         stage('Build') { 
             steps {
-                sh "HOME=${WORKSPACE} && cd ${WORKSPACE}/src/common && some command"
+                sh "HOME=${WORKSPACE} && npm install ."
             }
         }
     }
