@@ -8,7 +8,7 @@ pipeline {
     stages {
         stage('Build') { 
             steps {
-                sh 'npm install' 
+                sh "cd /var/lib/jenkins/workspace/react-app && npm install"
             }
         }
     }
